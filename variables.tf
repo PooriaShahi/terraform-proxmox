@@ -31,7 +31,6 @@ variable "memory" {
 }
 
 
-// Terraform will crash without rootfs defined
 variable "rootfs" {
   type = object({
     storage = string
@@ -44,7 +43,7 @@ variable "network" {
   type = object({
     name   = string
     bridge = string
-    ip     = string
+    ip     = list(string)
     gw     = string
   })
 
@@ -59,4 +58,10 @@ variable "start" {
   default     = true
   type        = bool
   description = "A boolean that determines if the container is started after creation"
+}
+
+variable "machine_counts" {
+  default     = 1
+  type        = number
+  description = "Number of machines that must be create"
 }

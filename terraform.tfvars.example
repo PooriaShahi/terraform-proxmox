@@ -4,6 +4,9 @@ ostemplate   = ""
 password     = ""
 unprivileged = true
 
+cores  = 
+memory = 
+
 rootfs = ({
   storage = ""
   size    = ""
