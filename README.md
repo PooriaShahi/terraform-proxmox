@@ -25,16 +25,17 @@ terraform init
 ```
 
 2. Copy **terraform.tfvars.example** file to **terraform.tfvars** and fill the variables
-3. Format and Validate your variables
+3. If you want to create multiple machine then set **count** in terraform.tfvars file. The default value for **count** is **1**.
+4. Format and Validate your variables
 ```
 terraform fmt
 terraform validate
 ```
-4. Apply your IaC
+5. Apply your IaC
 ```
 terraform apply
 ```
-5. Enjoy ;)
+6. Enjoy ;)
 
 
 # Contribute
