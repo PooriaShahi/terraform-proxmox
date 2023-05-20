@@ -1,0 +1,20 @@
+target_node  = ""
+hostname     = ""
+ostemplate   = ""
+password     = ""
+unprivileged = true
+
+rootfs = ({
+  storage = ""
+  size    = ""
+})
+
+network = {
+  bridge = ""
+  ip     = ""
+  gw     = ""
+  name   = ""
+}
+
+ssh_public_key = ""
+start = true
