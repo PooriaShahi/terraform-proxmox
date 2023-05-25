@@ -31,11 +31,15 @@ terraform init
 terraform fmt
 terraform validate
 ```
-5. Apply your IaC
+5. Plan you changes
+```
+terraform plan
+```
+6. Apply your IaC
 ```
 terraform apply
 ```
-6. Enjoy ;)
+7. Enjoy ;)
 
 
 # Contribute
